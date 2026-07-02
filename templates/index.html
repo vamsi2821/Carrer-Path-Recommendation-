@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>WealthMind AI — Personalized Investment Advisor</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div id="login-screen" class="login-screen">
+    <div class="login-card">
+      <div class="login-badge">Secure Access</div>
+      <h1 id="login-title">Welcome to WealthMind AI</h1>
+      <p class="login-subtitle" id="login-subtitle">Login to access each feature in separate pages.</p>
+      <div class="auth-toggle">
+        <button type="button" class="auth-tab active" id="tab-login">Login</button>
+        <button type="button" class="auth-tab" id="tab-signup">Sign Up</button>
+      </div>
+      <div class="form-group is-hidden" id="signup-name-group">
+        <label>Full Name</label>
+        <input type="text" id="signup-name" placeholder="Enter your name" />
+      </div>
+      <div class="form-group">
+        <label>Email / Username</label>
+        <input type="text" id="login-username" placeholder="Enter email or username" />
+      </div>
+      <div class="form-group">
+        <label>Password</label>
+        <input type="password" id="login-password" placeholder="Enter password" />
+      </div>
+      <button type="button" class="btn-primary full-width" id="login-btn">Login</button>
+      <p id="login-error" class="form-error"></p>
+      <p class="login-hint">Password must have minimum 8 characters, one uppercase, one lowercase, and one special character.</p>
+    </div>
+  </div>
+
+  <div id="app-shell" class="app-shell is-hidden">
+  <div id="connection-banner" class="connection-banner" hidden></div>
+  <div class="bg-grid"></div>
+  <div class="bg-orb orb1"></div>
+  <div class="bg-orb orb2"></div>
+
+  <!-- HEADER -->
+  <header>
+    <div class="logo">
+      <span class="logo-icon">◈</span>
+      <span class="logo-text">WealthMind <em>AI</em></span>
+    </div>
+    <nav>
+      <a href="#" class="nav-page-link active" data-page="home-page">Home</a>
+      <a href="#" class="nav-page-link" data-page="advisor-page">Advisor</a>
+      <a href="#" class="nav-page-link" data-page="market-page">Market</a>
+      <a href="#" class="nav-page-link" data-page="instruments-page">Instruments</a>
+      <a href="#" class="nav-page-link" data-page="profile-page">Profile</a>
+    </nav>
+    <div class="account-chip">
+      <span id="welcome-text">Welcome</span>
+      <button type="button" class="account-logout" id="logout-btn">Logout</button>
+    </div>
+  </header>
+
+  <main class="pages-wrap">
+  <section class="feature-page active" id="home-page">
+  <section class="hero">
+    <div class="hero-tag">AI-Powered · Personalized · India-Focused</div>
+    <h1>Your Money.<br><span class="accent">Your Strategy.</span></h1>
+    <p class="hero-sub">Stop guessing. Get a personalized investment plan built around your income, risk appetite, and life goals — powered by intelligent AI logic.</p>
+    <div class="hero-cta">
+      <a href="#advisor" class="btn-primary">Let's Begin →</a>
+      <a href="#how" class="btn-ghost">How it Works</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat"><span>11+</span><small>Instruments Covered</small></div>
+      <div class="stat"><span>100%</span><small>Personalized</small></div>
+      <div class="stat"><span>₹0</span><small>Cost to Use</small></div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="how-section" id="how">
+    <div class="section-label">Process</div>
+    <h2>How WealthMind Works</h2>
+    <div class="how-grid">
+      <div class="how-card">
+        <div class="how-num">01</div>
+        <h3>Enter Your Profile</h3>
+        <p>Age, income, savings, risk tolerance and your financial goal.</p>
+      </div>
+      <div class="how-card">
+        <div class="how-num">02</div>
+        <h3>AI Analyzes</h3>
+        <p>Our rule-based AI engine scores every instrument against your profile.</p>
+      </div>
+      <div class="how-card">
+        <div class="how-num">03</div>
+        <h3>Get Your Plan</h3>
+        <p>Receive a personalized portfolio allocation with expert insights.</p>
+      </div>
+      <div class="how-card">
+        <div class="how-num">04</div>
+        <h3>Take Action</h3>
+        <p>Follow the monthly investment plan and watch your wealth grow.</p>
+      </div>
+    </div>
+  </section>
+  </section>
+
+  <!-- ADVISOR FORM -->
+  <section class="feature-page" id="advisor-page">
+  <section class="advisor-section" id="advisor">
+    <div class="section-label">Personalized Advisor</div>
+    <h2>Build Your Investment Plan</h2>
+
+    <div class="advisor-container">
+      <div class="form-panel">
+        <div class="form-group">
+          <label>Your Age</label>
+          <input type="number" id="age" placeholder="e.g. 25" min="18" max="80" />
+        </div>
+        <div class="form-group">
+          <label>Monthly Income (₹)</label>
+          <input type="number" id="income" placeholder="e.g. 50000" min="0" />
+        </div>
+        <div class="form-group">
+          <label>Current Savings (₹)</label>
+          <input type="number" id="savings" placeholder="e.g. 200000" min="0" />
+        </div>
+        <div class="form-group">
+          <label>Monthly Expenses (₹)</label>
+          <input type="number" id="monthly_expenses" placeholder="e.g. 30000" min="0" />
+        </div>
+        <div class="form-group">
+          <label>Total Debt / EMI Outstanding (₹)</label>
+          <input type="number" id="debt" placeholder="e.g. 150000" min="0" />
+        </div>
+        <div class="form-group">
+          <label>Are You a Student?</label>
+          <select id="is_student">
+            <option value="">Select option...</option>
+            <option>No</option>
+            <option>Yes</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Number of Financial Dependents</label>
+          <input type="number" id="dependents" placeholder="e.g. 0" min="0" />
+        </div>
+        <div class="form-group">
+          <label>Investment Experience</label>
+          <select id="investment_experience">
+            <option value="">Select level...</option>
+            <option>Beginner</option>
+            <option>Intermediate</option>
+            <option>Advanced</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Risk Tolerance</label>
+          <div class="risk-selector" id="risk-selector">
+            <button class="risk-btn" data-value="Conservative" onclick="selectRisk(this)">
+              🛡️ Conservative<small>Safety First</small>
+            </button>
+            <button class="risk-btn" data-value="Moderate" onclick="selectRisk(this)">
+              ⚖️ Moderate<small>Balanced</small>
+            </button>
+            <button class="risk-btn" data-value="Aggressive" onclick="selectRisk(this)">
+              🚀 Aggressive<small>High Growth</small>
+            </button>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Investment Goal</label>
+          <select id="goal">
+            <option value="">Select your goal...</option>
+            <option>Wealth Building</option>
+            <option>Retirement Planning</option>
+            <option>Child Education</option>
+            <option>Emergency Fund</option>
+            <option>Home Purchase</option>
+            <option>Tax Saving</option>
+            <option>Regular Income</option>
+            <option>Personal Savings</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Investment Horizon</label>
+          <select id="horizon">
+            <option value="">Select horizon...</option>
+            <option>Short-term (< 1 year)</option>
+            <option>Medium-term (1–5 years)</option>
+            <option>Long-term (5–15 years)</option>
+            <option>Very Long-term (15+ years)</option>
+          </select>
+        </div>
+        <button class="btn-primary full-width" onclick="getRecommendation()">
+          <span id="btn-text">Generate My Investment Plan →</span>
+          <span id="btn-loader" style="display:none">Analyzing Profile...</span>
+        </button>
+        <p id="form-error" class="form-error"></p>
+      </div>
+
+      <!-- RESULTS PANEL -->
+      <div class="results-panel" id="results-panel">
+        <div class="results-empty" id="results-empty">
+          <div class="empty-icon">◈</div>
+          <p>Fill in your details and get a personalized<br/>investment strategy in seconds</p>
+        </div>
+        <div id="results-content" style="display:none">
+          <!-- Filled by JS -->
+        </div>
+      </div>
+    </div>
+  </section>
+  </section>
+
+  <!-- DAILY MARKET CONTEXT (India) -->
+  <section class="feature-page" id="market-page">
+  <section class="market-nav-section">
+    <div class="market-section-nav">
+      <button type="button" class="market-nav-btn active" data-target="market-context">Daily Context</button>
+      <button type="button" class="market-nav-btn" data-target="live-market-scraper">Live Data</button>
+      <button type="button" class="market-nav-btn" data-target="live-market">Live Tracker</button>
+      <button type="button" class="market-nav-btn" data-target="market-news">Market News</button>
+    </div>
+  </section>
+
+  <section class="brief-section market-pane active" id="market-context">
+    <div class="section-label">India markets</div>
+    <h2>Daily market context</h2>
+    <p class="brief-intro">
+      Live NSE snapshot plus links to places people use for <strong>daily market situation</strong> in India (Groww, NSE, Moneycontrol, ET).
+      This app reads public NSE data — same class of prices broker apps show.
+    </p>
+    <div id="market-brief-panel" class="market-brief-panel">
+      <p class="muted">Loading context…</p>
+    </div>
+  </section>
+
+  <!-- LIVE MARKET SCRAPER (RSS + NSE + page meta) -->
+  <section class="scraper-section market-pane" id="live-market-scraper">
+    <div class="scraper-toolbar">
+      <div>
+        <div class="section-label">Aggregator</div>
+        <h2>Live market scraper</h2>
+      </div>
+      <button type="button" class="btn-ghost btn-refresh" id="scraper-refresh" title="Run collector again">↻ Refresh scrape</button>
+    </div>
+    <p class="scraper-intro">
+      Pulls <strong>RSS headlines</strong> (Mint, ET, Moneycontrol, Investing India), <strong>NSE index snapshot</strong> via official API,
+      and light <strong>HTML meta</strong> reads (page title / description) for Groww, INDmoney, Business Standard, NSE — broker sites are often React,
+      so full tables are not available without a browser engine. Results are saved under <code>data/live_market_cache.json</code> for offline viewing.
+    </p>
+    <p id="scraper-status" class="scraper-status muted">Loading…</p>
+    <div id="live-scrape-panel" class="live-scrape-panel">
+      <p class="muted">Loading scraped data…</p>
+    </div>
+  </section>
+
+  <!-- LIVE MARKET TRACKER -->
+  <section class="tracker-section market-pane" id="live-market">
+    <div class="section-label">Live data</div>
+    <h2>Real-World Market Tracker</h2>
+    <p class="tracker-intro">
+      India indices and stocks use <strong>NSE India</strong> quotes and <strong>Nifty Indices</strong> history (official exchange / index data).
+      <strong>Green bars</strong> = session up vs prior close; <strong>red bars</strong> = down. If you see <strong>[DEMO]</strong>, the API could not reach NSE/Yahoo — charts still show sample shapes; run <code>python app.py</code> and open <code>http://127.0.0.1:5000</code> (do not open the HTML file directly).
+      The <strong>↻ Refresh</strong> button reloads data from the server. Not for placing orders — use your broker for live LTP.
+    </p>
+    <div class="tracker-toolbar">
+      <span id="tracker-status" class="tracker-status-text">Loading tracker…</span>
+      <button type="button" class="btn-ghost btn-refresh" id="tracker-refresh" title="Refresh now">↻ Refresh</button>
+    </div>
+    <div class="tracker-dual-charts">
+      <div class="tracker-chart-box">
+        <h3 class="tracker-chart-title">NIFTY 50 — daily % up / down</h3>
+        <p class="tracker-chart-caption">Each bar is one session’s change vs prior close.</p>
+        <div class="tracker-canvas-wrap">
+          <canvas id="chartDailyNifty" height="220"></canvas>
+        </div>
+      </div>
+      <div class="tracker-chart-box">
+        <h3 class="tracker-chart-title">NIFTY Bank — daily % up / down</h3>
+        <p class="tracker-chart-caption">Banking sector benchmark vs large-cap (NIFTY 50); both from Nifty Indices history.</p>
+        <div class="tracker-canvas-wrap">
+          <canvas id="chartDailySP500" height="220"></canvas>
+        </div>
+      </div>
+    </div>
+    <h3 class="tracker-subheading">Watchlist &amp; mini trends</h3>
+    <div class="tracker-watchlist" id="tracker-watchlist">
+      <p class="muted">Loading instruments…</p>
+    </div>
+  </section>
+
+  <!-- LIVE NEWS STRIP -->
+  <section class="news-section market-pane" id="market-news">
+    <div class="news-toolbar">
+      <div>
+        <div class="section-label">Markets</div>
+        <h2>Real-World Stock &amp; Market Headlines</h2>
+      </div>
+      <button type="button" class="btn-ghost btn-refresh" id="news-refresh" title="Reload headlines">↻ Refresh news</button>
+    </div>
+    <p class="news-intro">Headlines from <strong>Livemint</strong>, Investing.com India, Economic Times, Moneycontrol, Yahoo when available. If the feed is blocked, you’ll see education links to NSE, Groww, INDmoney, and Business Standard. Click a row to open the site.</p>
+    <div class="news-grid" id="news-feed">
+      <p class="news-loading">Loading latest headlines…</p>
+    </div>
+  </section>
+  </section>
+
+  <!-- INSTRUMENTS -->
+  <section class="feature-page" id="instruments-page">
+  <section class="instruments-section">
+    <div class="section-label">Coverage</div>
+    <h2>Investment Instruments We Cover</h2>
+    <div class="instruments-grid" id="instruments-grid">
+      <!-- Filled by JS -->
+    </div>
+  </section>
+  </section>
+
+  <section class="feature-page" id="profile-page">
+    <section class="account-section">
+      <div class="account-card">
+        <div class="section-label">Account</div>
+        <h3>Profile Details</h3>
+        <div class="account-grid">
+          <div><small>Name</small><p id="account-name">-</p></div>
+          <div><small>Email / Username</small><p id="account-username">-</p></div>
+          <div><small>Member Since</small><p id="account-created">-</p></div>
+        </div>
+      </div>
+      <div class="account-card" style="margin-top:14px">
+        <div class="section-label">Plan</div>
+        <h3>Current Ongoing Plan</h3>
+        <div class="account-grid">
+          <div><small>Plan Type</small><p id="profile-plan-title">-</p></div>
+          <div><small>Risk Opted</small><p id="profile-risk">-</p></div>
+          <div><small>Horizon</small><p id="profile-horizon">-</p></div>
+        </div>
+        <div class="account-grid" style="margin-top:10px">
+          <div><small>Review / Expiry</small><p id="profile-review-date">-</p></div>
+          <div><small>Status</small><p id="profile-plan-status">No plan generated yet</p></div>
+          <div><small>Guidance</small><p id="profile-plan-note">Generate a plan from Advisor page.</p></div>
+        </div>
+      </div>
+    </section>
+  </section>
+  </main>
+
+  <footer>
+    <div class="footer-logo">◈ WealthMind AI</div>
+    <p>Built as an academic project · Not financial advice · Consult a SEBI-registered advisor</p>
+    <p style="margin-top:8px; opacity:0.5; font-size:12px">B.Murali Krishna · M.Thavanesh Krishna · Y.Vamsi Krishna</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+  <script src="{{ url_for('static', filename='app.js') }}"></script>
+  </div>
+</body>
+</html>

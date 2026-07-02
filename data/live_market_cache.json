@@ -1,0 +1,198 @@
+{
+  "as_of": "2026-07-02T15:38:38.262517+00:00",
+  "source_label": "live_market_scraper",
+  "nse": {
+    "type": "nse_api",
+    "indices": [],
+    "ok": false
+  },
+  "rss_headlines": [
+    {
+      "type": "rss",
+      "source": "Livemint · Markets",
+      "title": "Temasek to sell $200 million stake in Policybazaar via block deal",
+      "link": "https://www.livemint.com/market/stock-market-news/temasek-pb-fintech-policybazaar-shares-block-deal-tencent-11782998569376.html",
+      "scraped_at": "2026-07-02T15:38:34.453090+00:00"
+    },
+    {
+      "type": "rss",
+      "source": "Livemint · Markets",
+      "title": "Hindustan Zinc reports record Q1 mined metal output for fifth straight year",
+      "link": "https://www.livemint.com/market/stock-market-news/hindustan-zinc-reports-record-q1-mined-metal-output-for-fifth-straight-year-11783002586454.html",
+      "scraped_at": "2026-07-02T15:38:34.453127+00:00"
+    },
+    {
+      "type": "rss",
+      "source": "Livemint · Markets",
+      "title": "Wall Street rises as Treasury yields ease after softer-than-expected jobs data",
+      "link": "https://www.livemint.com/market/stock-market-news/wall-street-rises-as-treasury-yields-ease-after-softer-than-expected-jobs-data-11782999863847.html",
+      "scraped_at": "2026-07-02T15:38:34.453144+00:00"
+    },
+    {
+      "type": "rss",
+      "source": "Economic Times · Markets",
+      "title": "Market Trading Guide: Suven Life Sciences among 2 stock recommendations for Friday",
+      "link": "https://economictimes.indiatimes.com/markets/stocks/news/market-trading-guide-suven-life-sciences-among-2-stock-recommendations-for-friday/articleshow/132141470.cms",
+      "scraped_at": "2026-07-02T15:38:34.529918+00:00"
+    },
+    {
+      "type": "rss",
+      "source": "Economic Times · Markets",
+      "title": "MacRitchie to sell up to $200 million stake in India's PB Fintech, term sheet shows",
+      "link": "https://economictimes.indiatimes.com/markets/stocks/news/macritchie-to-sell-up-to-200-million-stake-in-indias-pb-fintech-term-sheet-shows/articleshow/132140824.cms",
+      "scraped_at": "2026-07-02T15:38:34.529952+00:00"
+    },
+    {
+      "type": "rss",
+      "source": "Economic Times · Markets",
+      "title": "Two-wheeler exports and EV adoption signal strong consumer resilience: Sachin Relekar, Axis MF",
+      "link": "https://economictimes.indiatimes.com/markets/expert-view/two-wheeler-exports-and-ev-adoption-signal-strong-consumer-resilience-sachin-relekar-axis-mf/articleshow/132140732.cms",
+      "scraped_at": "2026-07-02T15:38:34.529964+00:00"
+    },
+    {
+      "type": "rss",
+      "source": "Economic Times · Stocks",
+      "title": "Market Trading Guide: Suven Life Sciences among 2 stock recommendations for Friday",
+      "link": "https://economictimes.indiatimes.com/markets/stocks/news/market-trading-guide-suven-life-sciences-among-2-stock-recommendations-for-friday/articleshow/132141470.cms",
+      "scraped_at": "2026-07-02T15:38:34.553366+00:00"
+    },
+    {
+      "type": "rss",
+      "source": "Economic Times · Stocks",
+      "title": "MacRitchie to sell up to $200 million stake in India's PB Fintech, term sheet shows",
+      "link": "https://economictimes.indiatimes.com/markets/stocks/news/macritchie-to-sell-up-to-200-million-stake-in-indias-pb-fintech-term-sheet-shows/articleshow/132140824.cms",
+      "scraped_at": "2026-07-02T15:38:34.553399+00:00"
+    },
+    {
+      "type": "rss",
+      "source": "Economic Times · Stocks",
+      "title": "Adani Enterprises launches QIP, sets floor price at Rs 3,034.68 per share",
+      "link": "https://economictimes.indiatimes.com/markets/stocks/news/adani-enterprises-launches-qip-sets-floor-price-at-rs-3034-68-per-share/articleshow/132140272.cms",
+      "scraped_at": "2026-07-02T15:38:34.553415+00:00"
+    },
+    {
+      "type": "rss",
+      "source": "Moneycontrol · Business",
+      "title": "ICICI Prudential Life Insurance to focus on growing absolute VNB amid slump in FY24",
+      "link": "https://www.moneycontrol.com/news/business/icici-prudential-life-insurance-to-focusgrowing-absolute-vnb-amid-slumpfy24_17532041.html",
+      "scraped_at": "2026-07-02T15:38:34.665120+00:00"
+    },
+    {
+      "type": "rss",
+      "source": "Moneycontrol · Business",
+      "title": "Tata Elxsi Q4 net profit, revenue decline QoQ; firm declares dividend of Rs 70 per share",
+      "link": "https://www.moneycontrol.com/news/business/tata-elxsi-q4-net-profit-revenue-decline-qoq-firm-declares-dividendrs-70-per-share_17532061.html",
+      "scraped_at": "2026-07-02T15:38:34.665151+00:00"
+    },
+    {
+      "type": "rss",
+      "source": "Moneycontrol · Business",
+      "title": "ICICI Pru Life Q4 net profit falls 26% to Rs 174 cr, insurer announces dividend",
+      "link": "https://www.moneycontrol.com/news/business/icici-pru-life-q4-net-profit-falls-26-to-rs-174-cr-insurer-announces-dividend_17532101.html",
+      "scraped_at": "2026-07-02T15:38:34.665164+00:00"
+    },
+    {
+      "type": "rss",
+      "source": "Investing.com India · Indices",
+      "title": "State Bank of India, BSE & Maruti Suzuki: The Next Big Move?",
+      "link": "https://in.investing.com/analysis/state-bank-of-india-bse--maruti-suzuki-the-next-big-move-200637979",
+      "scraped_at": "2026-07-02T15:38:35.175704+00:00"
+    },
+    {
+      "type": "rss",
+      "source": "Investing.com India · Indices",
+      "title": "Why Coal India Could Become One of the Market’s Most Watched Stocks This Week",
+      "link": "https://in.investing.com/analysis/why-coal-india-could-become-one-of-the-markets-most-watched-stocks-this-week-200637637",
+      "scraped_at": "2026-07-02T15:38:35.175828+00:00"
+    },
+    {
+      "type": "rss",
+      "source": "Investing.com India · Indices",
+      "title": "BSE, Groww and Bank of Baroda: What the Charts Are Telling Us Now",
+      "link": "https://in.investing.com/analysis/bse-groww-and-bank-of-baroda-what-the-charts-are-telling-us-now-200637480",
+      "scraped_at": "2026-07-02T15:38:35.175900+00:00"
+    },
+    {
+      "type": "rss",
+      "source": "Investing.com · Popular",
+      "title": "Stocks pare gains, trade mixed as Tesla slide counters soft June jobs report",
+      "link": "https://in.investing.com/news/stock-market-news/us-stock-futures-steady-as-investors-await-jobs-data-monitor-iran-talks-5479913",
+      "scraped_at": "2026-07-02T15:38:35.501703+00:00"
+    },
+    {
+      "type": "rss",
+      "source": "Investing.com · Popular",
+      "title": "U.S. economy adds 57,000 jobs in June",
+      "link": "https://in.investing.com/news/economic-indicators/us-economy-adds-57000-jobs-in-june-5480674",
+      "scraped_at": "2026-07-02T15:38:35.501745+00:00"
+    },
+    {
+      "type": "rss",
+      "source": "Investing.com · Popular",
+      "title": "Bharat Market Outperformers AI strategy up 19.5%, July picks now live",
+      "link": "https://in.investing.com/news/stock-market-news/bharat-market-outperformers-ai-strategy-up-195-july-picks-now-live-5480908",
+      "scraped_at": "2026-07-02T15:38:35.501761+00:00"
+    },
+    {
+      "type": "rss",
+      "source": "CNBC · Markets",
+      "title": "U.S. job creation cools in June with payrolls growth of just 57,000; unemployment rate at 4.2%",
+      "link": "https://www.cnbc.com/2026/07/02/jobs-report-june-2026-.html",
+      "scraped_at": "2026-07-02T15:38:36.633578+00:00"
+    },
+    {
+      "type": "rss",
+      "source": "CNBC · Markets",
+      "title": "Microsoft commits $2.5 billion and 6,000 employees to new AI implementation unit",
+      "link": "https://www.cnbc.com/2026/07/02/microsoft-commits-2point5-billion-6000-employees-ai-implementation-unit.html",
+      "scraped_at": "2026-07-02T15:38:36.633616+00:00"
+    },
+    {
+      "type": "rss",
+      "source": "CNBC · Markets",
+      "title": "Tesla stock sinks 7% despite strong deliveries report",
+      "link": "https://www.cnbc.com/2026/07/02/tesla-tsla-q2-2026-vehicle-delivery-production.html",
+      "scraped_at": "2026-07-02T15:38:36.633634+00:00"
+    }
+  ],
+  "page_meta": [
+    {
+      "type": "meta",
+      "source": "Groww · Markets (meta)",
+      "url": "https://groww.in/markets",
+      "title": "Share Market Live Today - Stock Market News Updates",
+      "snippet": "Stock/Share Market Live Updates: Get all the latest share market news on NSE, BSE, Nifty, Sensex, FII DII Activity, Top Gainers, Top Losers, Most Bought & More.",
+      "ok": true,
+      "scraped_at": "2026-07-02T15:38:36.949167+00:00"
+    },
+    {
+      "type": "meta",
+      "source": "INDmoney · Stocks (meta)",
+      "url": "https://www.indmoney.com/stocks",
+      "title": "Invest & Trade in Indian Stocks Online - 5000+ Stocks | INDmoney",
+      "snippet": "Invest & trade in 5000+ Indian stocks on NSE, BSE. Free Demat & Trading account, Zero AMC, Instant ₹0-fee Deposits and Withdrawals, MTF, Fast Orders, SIP in Stocks. SEBI-Registered.",
+      "ok": true,
+      "scraped_at": "2026-07-02T15:38:37.149736+00:00"
+    },
+    {
+      "type": "meta",
+      "source": "Business Standard · Markets (meta)",
+      "url": "https://www.business-standard.com/markets",
+      "title": "HTTP 403",
+      "snippet": "Page not reachable or blocked (403/404).",
+      "ok": false,
+      "scraped_at": "2026-07-02T15:38:37.256988+00:00"
+    },
+    {
+      "type": "meta",
+      "source": "NSE India · Home (meta)",
+      "url": "https://www.nseindia.com/",
+      "title": "HTTP 403",
+      "snippet": "Page not reachable or blocked (403/404).",
+      "ok": false,
+      "scraped_at": "2026-07-02T15:38:37.368944+00:00"
+    }
+  ],
+  "disclaimer": "Educational aggregation. RSS feeds and public NSE APIs only; meta snippets are best-effort. Respect site terms; not for trading.",
+  "cached_at": "2026-07-02T15:38:38.265062+00:00"
+}
